@@ -1,11 +1,14 @@
 -- override shoot sound for laser turrets
+if settings.startup["pew-argh-laser-turret-vanilla"].value then
+  data.raw["electric-turret"]["laser-turret"].attack_parameters.sound = {}
+end
 if settings.startup["pew-argh-laser-turret-pew"].value then
-  data.raw["electric-turret"]["laser-turret"].attack_parameters.sound = {
-  	{
-    	filename = "__PEW-ARGH__/sounds/pew.ogg",
-  		volume = 1
-  	}
-  }
+  sound = data.raw["electric-turret"]["laser-turret"].attack_parameters.sound
+  sound[#sound+1] = { filename = "__PEW-ARGH__/sounds/pew.ogg", volume = 1 }
+end
+if settings.startup["pew-argh-laser-turret-pew2"].value then
+  sound = data.raw["electric-turret"]["laser-turret"].attack_parameters.sound
+  sound[#sound+1] = { filename = "__PEW-ARGH__/sounds/pew2.ogg", volume = 1 }
 end
 
 -- override shoot sound for gun turrets
