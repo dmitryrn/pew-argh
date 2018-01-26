@@ -1,0 +1,11 @@
+{
+    "name": "PEW-ARGH",
+    "version": "1.0.1",
+    "title": "PEW-ARGH",
+    "author": "aequitas",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "Pew pew pew, aaargghh!!!11"
+}
