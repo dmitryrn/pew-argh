@@ -8,6 +8,17 @@ if settings.startup["pew-argh-laser-turret-pew"].value then
   }
 end
 
+-- override shoot sound for gun turrets
+if settings.startup["pew-argh-gun-turret-bam"].value then
+  data.raw["ammo-turret"]["gun-turret"].attack_parameters.sound = {
+  	{
+    	filename = "__PEW-ARGH__/sounds/bambambam.ogg",
+  		volume = 1
+  	}
+  }
+end
+
+
 -- add wilhelm scream to existing list of dying sounds for biters
 if settings.startup["pew-argh-wilhelm"].value then
   units = {"small-biter", "medium-biter", "big-biter", "behemoth-biter"}
