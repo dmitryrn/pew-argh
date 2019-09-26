@@ -1,5 +1,5 @@
 -- override shoot sound for laser turrets
-if settings.startup["pew-argh-laser-turret-vanilla"].value then
+if not settings.startup["pew-argh-laser-turret-vanilla"].value then
   data.raw["electric-turret"]["laser-turret"].attack_parameters.sound = {}
 end
 if settings.startup["pew-argh-laser-turret-pew"].value then
