@@ -1,7 +1,7 @@
 version=$(shell jq -r .version <src/info.json)
 
 mod_install_base=~/Library/Application\ Support/factorio/mods
-mod_name=PEW-ARGH_${version}
+mod_name=PEW-PEW_${version}
 mod_build=${mod_name}.zip
 mod_install=${mod_install_base}/${mod_build}
 
@@ -14,7 +14,7 @@ all: install
 install: ${mod_install}
 
 ${mod_install}: ${mod_build}
-	rm -f ${mod_install_base}/PEW-ARGH_*.zip
+	rm -f ${mod_install_base}/PEW-PEW_*.zip
 	cp "$<" "$@"
 
 ${mod_name}: src/info.json ${lua} ${sounds} ${locales}

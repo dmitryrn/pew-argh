@@ -1,11 +1,11 @@
 {
-  "name": "Laser turrets PEW PEW sound",
-  "version": "1.0.0",
-  "title": "Laser turrets PEW PEW sound",
-  "author": "aequitas",
+  "name": "PEW-PEW",
+  "version": "2.0.0",
+  "title": "Laser Turrets PEW PEW Sound",
+  "author": "axea",
   "contact": "",
   "homepage": "",
   "factorio_version": "0.18",
   "dependencies": ["base >= 0.17"],
-  "description": "Add PEW PEW sound for laser turrets"
+  "description": "Add PEW PEW sound for laser turrets. Also new sounds for gun turret and biter dying can be enabled in startup settings."
 }
