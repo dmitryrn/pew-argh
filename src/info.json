@@ -1,11 +1,11 @@
 {
-  "name": "PEW-ARGH",
-  "version": "1.0.5",
-  "title": "PEW-ARGH",
+  "name": "Laser turrets PEW PEW sound",
+  "version": "1.0.0",
+  "title": "Laser turrets PEW PEW sound",
   "author": "aequitas",
   "contact": "",
   "homepage": "",
-  "factorio_version": "0.16",
-  "dependencies": ["base >= 0.16"],
-  "description": "Add comic relief to Laser turret and biter sounds - Pew pew pew, aaargghh!!!11"
+  "factorio_version": "0.18",
+  "dependencies": ["base >= 0.17"],
+  "description": "Add PEW PEW sound for laser turrets"
 }
