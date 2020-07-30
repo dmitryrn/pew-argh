@@ -21,6 +21,8 @@ ${mod_name}: src/info.json ${lua} ${sounds} ${locales}
 	rm -rf $@
 	mkdir -p $@
 	cp -r src/ $@
+	cp thumbnail.png $@
+	cp changelog.txt $@
 
 ${mod_build}: ${mod_name}
 	zip -r $@ $</
